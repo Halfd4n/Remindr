@@ -1,0 +1,182 @@
+/* --- FONT --- */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+/* --- BODY --- */
+body{
+    margin: 0;
+    background-color: rgb(11, 11, 74);
+    color: rgb(188, 172, 172);
+    font-family: "Dosis", 'lucida sans';
+}
+
+/* --- GRID --- */ 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    gap: 10px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+/* --- ASIDE --- */ 
+.aside-header > i {
+    margin: 0 10px;
+    font-size: 26px;
+}
+
+.flex-container > i {
+    margin: 0 15px;
+}
+
+.aside-item:hover {
+    background-color: rgba(47, 47, 120, 0.789);
+}
+
+.aside-item {
+    margin: 2px;
+    padding: 10px;
+}
+
+/* --- MAIN  --- */
+
+.main-header > h1 {
+    font-size: 2vw;
+    margin-left: 15px;
+}
+
+/* --- INPUT --- */
+
+.input-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+#todo-input-text {
+    width: 40%;
+    max-width: 18vw;
+    resize: none;
+    min-height: 3vh;;
+    font-size: 1vw;
+    padding: 5px;
+    font-family: "Dosis", 'lucida sans';
+    word-wrap: break-word;
+}
+
+#type-select {
+    font-size: 16px;
+    font-family: "Dosis", "lucida sans";
+}
+
+#btn-container {
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 2vw;
+}
+.todo-btn {
+    font-size: 16px;
+    font-family: "Dosis", "lucida sans";
+    margin-left: 10px;
+}
+
+.save-btn {
+    font-size: 16px;
+    font-family: "Dosis", "lucida sans";
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+/* --- TODOS --- */
+
+.todos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    text-justify: center;
+}
+
+.unfinished-todos {
+    width: 95%;
+}
+
+.finished-todos {
+    width: 95%;
+}
+
+.unfinished-todos > .todo {
+    align-items: center;
+    display: grid;
+    border: solid rgba(47, 47, 120, 0.789);
+    height: 15vh;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    grid-template-columns: 0.5fr 2fr 1fr;
+}
+
+.finished-todos > .todo {
+    align-items: center;
+    display: grid;
+    border: solid rgba(47, 47, 120, 0.789);
+    background-color: rgb(64, 134, 66);
+    height: 15vh;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    grid-template-columns: 0.5fr 2fr 1fr;
+}
+
+.finished-todos > .todo > h3 {
+    text-decoration: line-through;
+}
+
+.todo > h3 {
+    margin: 1vh 2vw;
+    font-size: 1em;
+}
+
+.todo:hover{
+    background-color: rgba(47, 47, 120, 0.789);
+}
+
+.checkbox {
+    height: 18px;
+    width: 18px;
+}
+
+
+#delete-btn {
+    margin-left: 10px;
+    border: solid ;
+    border-radius: 10%;
+    font-family: "Dosis", 'lucida sans';
+    text-align: center;
+    text-justify: center;
+    background-color: rgba(238, 51, 51, 0.816);
+    text-decoration: none !important;
+}
+
+.todo-finished {
+    text-decoration: line-through;
+    background-color: rgb(64, 134, 66);
+}
+
+.green-text {
+    color: rgb(64, 134, 66);
+}
+
+.red-text {
+    color: rgba(238, 51, 51, 0.816);
+}
+
+#status-message{
+    margin-left: 2vw;
+}

@@ -1,0 +1,48 @@
+{
+  "todos": [
+    {
+      "task": "Legoland",
+      "type": "Leisure",
+      "isFinished": false,
+      "id": 17
+    },
+    {
+      "task": "Kiss husband",
+      "type": "Home",
+      "isFinished": false,
+      "id": 18
+    },
+    {
+      "task": "Make call",
+      "type": "Work",
+      "isFinished": false,
+      "id": 22
+    },
+    {
+      "task": "Overtime",
+      "type": "Work",
+      "isFinished": false,
+      "id": 23
+    },
+    {
+      "task": "Read book",
+      "type": "Leisure",
+      "isFinished": false,
+      "id": 24
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "type": "Home"
+    },
+    {
+      "id": 2,
+      "type": "Work"
+    },
+    {
+      "id": 3,
+      "type": "Leisure"
+    }
+  ]
+}

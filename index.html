@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Remindrs</title>
+</head>
+<body>
+    <div class="grid-container">
+        <aside>
+            <div class="flex-container aside-header">
+                <i class="fa-solid fa-brain"></i>
+                <h1>Remindr</h1>
+            </div>
+            <div class="flex-container aside-item">
+                <i class="fa-solid fa-book"></i>
+                <h2>All</h2>
+            </div>
+            <div class="flex-container aside-item">
+                <i class="fa-solid fa-house-chimney"></i>
+                <h2>Home</h2>
+            </div>
+            <div class="flex-container aside-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <h2>Work</h2>
+            </div>
+            <div class="flex-container aside-item">
+                <i class="fa-solid fa-sun"></i>
+                <h2>Leisure</h2>
+            </div>
+        </aside>
+        <main>
+            <div class="main-container">
+                <div class="main-header">
+                    <h1>Your Remindrs</h1>
+                </div>
+            <div class="input-container">
+                <textarea id="todo-input-text" placeholder="Add new todos"></textarea>
+            </div>
+            <div id="btn-container">
+                <select id="type-select">
+                    <option>Todo type</option>
+                </select>
+                <button id="add-save-btn" class="todo-btn">Add</button>
+            </div>
+                <div id="message-container">
+                    <h3 id="status-message"></h3>
+                </div>
+                <div class="todos-container">
+                    <div class="unfinished-todos">
+                        <h2>To do:</h2>
+                    </div>
+                    <div class="finished-todos">
+                        <h2>Done:</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="scripts/scripts.mjs"></script>
+</body>
+</html>
